@@ -1,11 +1,11 @@
-from typing import List
+﻿from typing import List
 from urllib.parse import quote
 
 from fastapi import FastAPI
 from fastapi.responses import PlainTextResponse
 from pydantic import BaseModel, HttpUrl
 
-app = FastAPI(title="GitFolio Generator", version="1.0.0")
+app = FastAPI(title="ReadmeCraft Generator", version="1.0.0")
 
 
 class GenerateRequest(BaseModel):
@@ -163,3 +163,4 @@ def _build_markdown(data: GenerateRequest) -> str:
 @app.post("/generate", response_class=PlainTextResponse)
 def generate(request: GenerateRequest) -> str:
     return _build_markdown(request)
+

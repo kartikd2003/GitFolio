@@ -1,11 +1,11 @@
-from typing import List
+ï»¿from typing import List
 from urllib.parse import quote
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
 from pydantic import BaseModel, HttpUrl
 
-app = FastAPI(title="GitFolio Generator", version="1.0.0")
+app = FastAPI(title="ReadmeCraft Generator", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -111,7 +111,7 @@ def _build_markdown(data: GenerateRequest) -> str:
         )
 
     sections.append(
-        "### Featured Projects\n- Project One — Short, punchy description\n- Project Two — What problem it solves\n- Project Three — Impact and tech used"
+        "### Featured Projects\n- Project One ï¿½ Short, punchy description\n- Project Two ï¿½ What problem it solves\n- Project Three ï¿½ Impact and tech used"
     )
 
     return "\n\n".join(sections)
@@ -120,3 +120,4 @@ def _build_markdown(data: GenerateRequest) -> str:
 @app.post("/generate", response_class=PlainTextResponse)
 def generate(request: GenerateRequest) -> str:
     return _build_markdown(request)
+

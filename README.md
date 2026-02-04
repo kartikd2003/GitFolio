@@ -1,4 +1,4 @@
-﻿# GitFolio
+﻿# ReadmeCraft
 
 A developer‑focused web app that generates clean, copy‑paste‑ready GitHub profile READMEs with live preview, themed badges, and modular sections.
 
@@ -33,7 +33,7 @@ The frontend will call `http://127.0.0.1:8000/generate` if the backend is runnin
 
 ## Project Structure
 ```
-GitFolio/
+ReadmeCraft/
 │
 ├── api/
 │   ├── index.py
@@ -71,3 +71,4 @@ This project relies on third-party services and libraries that have their own te
 
 ## License
 MIT License. See `LICENSE`.
+
