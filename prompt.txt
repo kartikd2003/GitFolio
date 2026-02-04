@@ -1,0 +1,156 @@
+🧠 MASTER PROMPT — GitHub Profile Enhancer Website
+
+You can copy-paste this as-is.
+
+🔹 Project Prompt
+
+You are an expert GitHub profile designer and developer-experience (DX) specialist.
+
+Build a developer-focused web platform that helps users enhance their GitHub profile README with clean, professional, and copy-paste-ready Markdown.
+
+The website should generate:
+
+Skill icons using Shields.io and popular tech logos
+
+Animated typing text sections for profile introductions
+
+GitHub stats, streaks, and trophies with theme selection
+
+Social media badges linking to GitHub, LinkedIn, Twitter, and personal portfolios
+
+A complete, well-structured README.md profile layout
+
+Functional Requirements
+
+Accept user inputs such as name, role, skills, usernames, and links
+
+Generate optimized Markdown that renders correctly on GitHub
+
+Provide a live preview of the generated README
+
+Include a one-click copy-to-clipboard feature
+
+Ensure outputs follow GitHub README best practices and are visually appealing
+
+Design Requirements
+
+Dark, GitHub-inspired UI
+
+Minimal, modern, developer-friendly layout
+
+Clear typography and spacing
+
+Responsive for desktop and mobile
+
+No unnecessary animations—focus on clarity and usefulness
+
+Output Quality Rules
+
+Output must be clean Markdown only (no explanations unless requested)
+
+Avoid broken links or unsupported HTML
+
+Use widely supported GitHub README tools and APIs
+
+Keep sections modular so users can customize easily
+
+Tone & Style
+
+Professional, modern, and developer-centric
+
+Focus on clarity, simplicity, and usability
+
+Optimize for recruiters and open-source visibility
+
+The goal is to help developers create a high-impact GitHub profile that looks professional, readable, and impressive with minimal effort.
+
+🧱 Overall Architecture
+
+Frontend (UI) → Backend (Generator APIs) → External APIs (GitHub tools)
+Database is optional (only needed for advanced features).
+
+🎨 Frontend Tech Stack
+Core (MVP)
+
+HTML5 – Structure
+
+CSS3 – Styling (GitHub dark theme)
+
+Vanilla JavaScript (ES6) – Interactions & API calls
+
+✅ Lightweight
+✅ Fast loading
+✅ Beginner & recruiter friendly
+
+Optional Upgrades
+
+React.js – Component-based UI (if scaling)
+
+Tailwind CSS – Faster UI styling
+
+Vite – Frontend bundler
+
+Frontend Responsibilities
+
+Collect user input (skills, name, links)
+
+Show live preview
+
+Call backend APIs
+
+Copy Markdown to clipboard
+
+⚙️ Backend Tech Stack
+Recommended
+
+Python – FastAPI
+
+High performance
+
+Easy API creation
+
+Auto Swagger docs (/docs)
+
+Backend Responsibilities
+
+Generate Markdown content
+
+Validate user input
+
+Format skill badges
+
+Build animations & stats URLs
+
+Return clean Markdown only
+
+Backend Dependencies
+fastapi
+uvicorn
+pydantic
+
+🗄️ Database (Optional)
+❌ Not required for MVP
+
+Your app can work without any database because:
+
+Output is generated dynamically
+
+No user login initially
+
+✅ When database IS required
+
+Use DB only if you add:
+
+User accounts
+
+Saved README templates
+
+History of generated profiles
+
+Favorites / presets
+
+Recommended Databases
+
+SQLite – Local & simple (start)
+
+PostgreSQL – Production-ready (later)

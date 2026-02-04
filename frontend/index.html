@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GitFolio — GitHub Profile Enhancer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">GF</div>
+        <div>
+          <h1>GitFolio</h1>
+          <p>Build a polished GitHub README in minutes.</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="copyBtn" class="btn primary">Copy Markdown</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="panel">
+        <h2>Profile Inputs</h2>
+        <div class="grid">
+          <label>
+            <span>Name</span>
+            <input id="name" type="text" placeholder="Jane Doe" />
+          </label>
+          <label>
+            <span>Role</span>
+            <input id="role" type="text" placeholder="Full Stack Developer" />
+          </label>
+          <label>
+            <span>GitHub Username</span>
+            <input id="github" type="text" placeholder="janedoe" />
+          </label>
+          <label>
+            <span>Typing Text (comma-separated)</span>
+            <input id="typing" type="text" placeholder="Building cool things,Open-source contributor,Always learning" />
+          </label>
+          <label>
+            <span>Skills (comma-separated)</span>
+            <input id="skills" type="text" placeholder="TypeScript,React,Node.js,Python,Docker" />
+          </label>
+          <label>
+            <span>Theme</span>
+            <select id="theme">
+              <option value="github_dark" selected>GitHub Dark</option>
+              <option value="tokyonight">Tokyo Night</option>
+              <option value="radical">Radical</option>
+              <option value="gruvbox">Gruvbox</option>
+              <option value="onedark">One Dark</option>
+              <option value="dracula">Dracula</option>
+            </select>
+          </label>
+          <label>
+            <span>LinkedIn</span>
+            <input id="linkedin" type="text" placeholder="https://linkedin.com/in/yourname" />
+          </label>
+          <label>
+            <span>Twitter / X</span>
+            <input id="twitter" type="text" placeholder="https://x.com/yourhandle" />
+          </label>
+          <label>
+            <span>Portfolio</span>
+            <input id="portfolio" type="text" placeholder="https://yourdomain.com" />
+          </label>
+        </div>
+
+        <div class="toggles">
+          <label class="toggle"><input id="includeStats" type="checkbox" checked /> GitHub Stats</label>
+          <label class="toggle"><input id="includeStreak" type="checkbox" checked /> Streak</label>
+          <label class="toggle"><input id="includeTrophies" type="checkbox" checked /> Trophies</label>
+        </div>
+
+        <button id="generateBtn" class="btn">Generate</button>
+      </section>
+
+      <section class="panel">
+        <h2>Markdown Output</h2>
+        <textarea id="output" spellcheck="false"></textarea>
+      </section>
+
+      <section class="panel">
+        <h2>Live Preview</h2>
+        <div id="preview" class="preview"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
