@@ -35,6 +35,10 @@ The frontend will call `http://127.0.0.1:8000/generate` if the backend is runnin
 ```
 GitFolio/
 │
+├── api/
+│   ├── index.py
+│   └── requirements.txt
+│
 ├── frontend/
 │   ├── index.html
 │   ├── styles.css
@@ -44,6 +48,7 @@ GitFolio/
 │   ├── main.py
 │   └── requirements.txt
 │
+├── vercel.json
 ├── LICENSE
 └── README.md
 ```
