@@ -1,6 +1,8 @@
 ﻿# ReadmeCraft
 
-A developer‑focused web app that generates clean, copy‑paste‑ready GitHub profile READMEs with live preview, themed badges, and modular sections./n
+A developer‑focused web app that generates clean, copy‑paste‑ready GitHub profile READMEs with live preview, themed badges, and modular sections.
+
+## Visit Platform
 https://readmecraft-inky.vercel.app/
 
 ## Features
